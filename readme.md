@@ -43,6 +43,12 @@ Teams can share Docker images and containers, ensuring everyone is working with 
 Docker allows developers to quickly create and test new features or applications without setting up complex environments.
 
 # Docker Installation Linux
+Prerequisite for Installation
+
+Ubuntu 22.04.4 LTS or compatible Linux distribution
+64-bit of Ubuntu version
+At least 2 GB of RAM for running Docker
+Sufficient disk space for Docker images and containers.
 
 #### Step 1. Check if the system up-to-date using following command :
 
@@ -213,6 +219,7 @@ $ sudo docker pull (image name)
 ```bash
 sudo docker push (image name)
 ```
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20221205115118/Architecture-of-Docker.png)
 
 ### conclusion
 
