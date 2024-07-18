@@ -202,7 +202,7 @@ $ sudo docker rm (container name)
 10.Remove Container
 
 ```bash
-$ sudo docker rmi (image name)
+$ sudo docker rm (container name)
 ```
 
 11.Check the container on the machine
