@@ -1,7 +1,7 @@
 # Docker
 
-1.  What is Docker?
-2.  Why we need Docker?
+1.  What is Docker
+2.  Why we need Docker
 3.  Docker Installation Linux
 4.  Flow of Docker
 5.  What is Docker File
@@ -82,6 +82,8 @@ tanu@tanu-HP:~$ docker --version
 Docker version 27.0.3, build 7d4bcd8
 
 ```
+# Flow of Docker
+![images](https://suresoft.gitlab-pages.rz.tu-bs.de/workshop-website/_images/about-dockerworking.JPG)
 
 # what is Docker file
 
