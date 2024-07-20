@@ -122,7 +122,7 @@ $ sudo systemctl status docker
 ![images](https://gatling.io/hs-fs/hubfs/docker-containers.png?width=450&height=374&name=docker-containers.png)
 
 # Flow of Docker
-![image](https://miro.medium.com/v2/resize:fit:594/1*MLFxdoY6ImiTghX9l0lDTA.png)
+![image](https://suresoft.gitlab-pages.rz.tu-bs.de/workshop-website/_images/about-dockerworking.JPG)
 # Docker Daemon
 
 - Docker Daemon runs on the `Host O.S`.
