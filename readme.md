@@ -3,10 +3,10 @@
 1.  What is Docker
 2.  Why we need Docker
 3.  Docker Installation Linux
-4.  Flow of Docker
-5.  What is Docker File
-6.  What is Dcoker Image
-7.  What is Docker Containers
+4.  What is Docker File
+5.  What is Dcoker Image
+6.  What is Docker Containers
+7.  Flow of Docker
 8.  Docker Daemon
 9.  Docker Client
 10. Docker Host
@@ -14,6 +14,7 @@
 12. Architecture of Docker
 13. Basic Command of Docker
 14. conclusion
+15. Reference link
 
 # What is Docker?
 
@@ -97,8 +98,6 @@ $ sudo systemctl start docker
 ```bash
 $ sudo systemctl status docker
 ```
-# Flow of Docker
-![images](https://suresoft.gitlab-pages.rz.tu-bs.de/workshop-website/_images/about-dockerworking.JPG)
 
 # what is Docker file
 
@@ -114,7 +113,6 @@ $ sudo systemctl status docker
 - Create image from docker file
 - Create images from exiting docker container
 
-
 # what is Docker Container
 
 - A Docker container is a light weightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.
@@ -123,6 +121,8 @@ $ sudo systemctl status docker
 
 ![images](https://gatling.io/hs-fs/hubfs/docker-containers.png?width=450&height=374&name=docker-containers.png)
 
+# Flow of Docker
+![image](https://miro.medium.com/v2/resize:fit:594/1*MLFxdoY6ImiTghX9l0lDTA.png)
 # Docker Daemon
 
 - Docker Daemon runs on the `Host O.S`.
