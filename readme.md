@@ -111,7 +111,7 @@ $ sudo systemctl status docker
 # what is Docker Container
 
 A Docker container is a lightweightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.
-
+![images](https://gatling.io/hs-fs/hubfs/docker-containers.png?width=450&height=374&name=docker-containers.png)
 # Docker Daemon
 
 - Docker Daemon runs on the `Host O.S`.
