@@ -18,8 +18,8 @@
 # What is Docker?
 
 Docker is a containerization platform that helps package, deploy, and run applications within containers. Containers are different from virtual machines because they are lightweight and include only the necessary features required by the application. Docker enables developers to efficiently run applications in a consistent manner across different computing environments.
-![image](https://github.com/user-attachments/assets/d8c7162f-b7aa-4171-a26b-ac94f80e3289)
 
+![image](https://miro.medium.com/v2/resize:fit:594/1*MLFxdoY6ImiTghX9l0lDTA.png)
 
 # Why use Docker?
 
