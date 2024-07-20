@@ -156,6 +156,10 @@ $ sudo systemctl status docker
 - Public Registry - It is also called as `Docker Hub`.
 
 - Private Registry - It is used to share images within the enterprise.
+  
+# architecture of Docker
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20221205115118/Architecture-of-Docker.png)
 
 # Bacis Docker Command
 
@@ -245,7 +249,6 @@ $ sudo docker pull (image name)
 ```bash
 sudo docker push (image name)
 ```
-![image](https://media.geeksforgeeks.org/wp-content/uploads/20221205115118/Architecture-of-Docker.png)
 
 ### conclusion
 
