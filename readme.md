@@ -104,14 +104,25 @@ $ sudo systemctl status docker
 
 - A Dockerfile is a text file containing a series of instructions that define how to build a Docker image. Each instruction in a Dockerfile specifies a step to create the image, such as setting a base image, copying files, installing dependencies, and running commands. When Docker processes this Dockerfile, it creates an image that can be used to run a containerized application consistently across different environments.
 
-# What is Docker Image
+# What is Docker Images
 
-- A Docker image is a complete and executable software package that includes all dependencies and configurations needed to run an application
+- Docker image are the read only binary templates used to create docker container.
+- Single file with all dependencies and configuaration required to run a program.
+
+### Way to create an Images
+- Take image from docker hub
+- Create image from docker file
+- Create images from exiting docker container
+
 
 # what is Docker Container
 
-A Docker container is a lightweightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.
+- A Docker container is a light weightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.
+- In other words, we can say that ,the image is a template and the container is a copy of that template.
+- Image become container when they run on docker engine.
+
 ![images](https://gatling.io/hs-fs/hubfs/docker-containers.png?width=450&height=374&name=docker-containers.png)
+
 # Docker Daemon
 
 - Docker Daemon runs on the `Host O.S`.
