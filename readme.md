@@ -143,17 +143,17 @@ $ sudo systemctl status docker
 
   ### Used commands by client
  - The command **docker build** builds a Docker image from a Dockerfile.
- ```bash
- docker build.
-  ```
+    ```bash
+    docker build.
+    ```
 - **docker pull** is used to download an existing Docker image from a remote Docker registry.
-  ```bash
-  docker pull image_name
-  ````
-  - **docker run** is used to  run Docker containers.
-```bash
-docker run container_name
-```
+    ```bash
+   docker pull image_name
+    ````
+ - **docker run** is used to  run Docker containers.
+   ```bash
+  docker run container_name
+   ```
 
 
 
