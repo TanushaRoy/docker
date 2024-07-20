@@ -146,18 +146,14 @@ $ sudo systemctl status docker
     ```bash
     docker build.
     ```
-- **docker pull** is used to download an existing Docker image from a remote Docker registry.
+- The command **docker pull** is used to download an existing Docker image from a remote Docker registry.
     ```bash
    docker pull image_name
     ````
- - **docker run** is used to  run Docker containers.
+ - The command **docker run** is used to  run Docker containers.
    ```bash
-  docker run container_name
+   docker run container_name
    ```
-
-
-
-
 # Docker Host
 
 - Docker host is used to provide an environment to execute and run applications.
