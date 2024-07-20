@@ -97,7 +97,7 @@ Docker version 27.0.3, build 7d4bcd8
 
 # what is Docker Container
 
-A Docker container is a lightweightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.![image](https://github.com/user-attachments/assets/071c644c-6197-4eca-b3e7-661c8d1e742d)
+A Docker container is a lightweightand executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.![image](https://www.autopi.io/media/django-summernote/2021-08-04/59e5c775-ee08-444a-aef4-3df2190d648e.webpd)
 
 
 # Docker Daemon
