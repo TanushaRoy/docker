@@ -187,16 +187,6 @@ tanu@tanu-HP:~$ docker --version
 Docker version 27.0.3, build 7d4bcd8
 ```
 
-2.docker build command is used to create a Docker image from a Dockerfile and a context.
-
-```bash
-$ docker build
-```
-
-3.The docker pull command is used by a client to download an image from a Docker registry (such as Docker Hub) to their local system.
-
-```bash
-$ docker pull
 ```
 
 4.docker run command is used to start a new container from a Docker image.
