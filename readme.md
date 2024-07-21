@@ -170,7 +170,7 @@ $ sudo systemctl status docker
 
 - Private Registry - It is used to share images within the enterprise.
   
-# architecture of Docker
+# Architecture of Docker
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20221205115118/Architecture-of-Docker.png)
 
@@ -296,3 +296,6 @@ tanu@tanu-HP:~$ docker rm 97fd9b25021c
 # conclusion
 
 Docker has revolutionized application development by using containerization to ensure consistency, simplify dependency management, and enhance scalability, making it crucial for modern DevOps and cloud integration.
+
+# Reference link
+ https://docs.docker.com
