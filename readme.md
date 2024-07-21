@@ -17,8 +17,7 @@
 15. Reference link
 
 # What is Docker?
-
-Docker is a containerization platform that helps package, deploy, and run applications within containers. Containers are different from virtual machines because they are lightweight and include only the necessary features required by the application. Docker enables developers to efficiently run applications in a consistent manner across different computing environments.
+Docker is a tool that makes it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all parts it needs, like libraries and other dependencies, and ship it all out as one package. This ensures that the application runs consistently across different computing environments.
 
 ![image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPohD640FmYsp7JfKZ5kv1MgeyCowXRdeImQ&s)
 
