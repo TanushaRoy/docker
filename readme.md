@@ -186,73 +186,113 @@ $ docker --version
 tanu@tanu-HP:~$ docker --version
 Docker version 27.0.3, build 7d4bcd8
 ```
-
-```
-
-4.docker run command is used to start a new container from a Docker image.
-
+2.Pull images from docker hub
 ```bash
-$ docker run
-```
-
-5. Create Docker Image
-
+docker pull image
+````
 ```bash
-docker iamge -t (image name)
+tanu@tanu-HP:~$ docker pull mysql
+Using default tag: latest
+latest: Pulling from library/mysql
+d9a40b27c30f: Pull complete 
+d948328c7651: Pull complete 
+c1e267313ede: Pull complete 
+7478f013875a: Pull complete 
+9221a2250289: Pull complete 
+d1f57baa52d5: Pull complete 
+35c3d30e8624: Pull complete 
+3d4d1dd0cca6: Pull complete 
+08bfe3f7d1c5: Pull complete 
+537e7daeeea3: Pull complete 
+Digest: sha256:72a37ddc9f839cfd84f1f6815fb31ba26f37f4c200b90e49607797480e3be446
+Status: Downloaded newer image for mysql:latest
+docker.io/library/mysql:latest
+
 ```
-
-6.Check Docker Image Details
-
+3.List of Docker Images
 ```bash
-Docker image ls
+docker images
 ```
-
-7. Start Container
-
 ```bash
-$ sudo docker run -itd --name (container name) (Image name)
+tanu@tanu-HP:~$ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+<none>       <none>    10732a27da3d   6 days ago    1.42GB
+php          latest    4f9597754516   2 weeks ago   537MB
+nginx        latest    fffffc90d343   4 weeks ago   188MB
+
 ```
-
-8 . Stop the Container
-
+4.Create Container
 ```bash
-$ sudo docker stop (container name)
+docker run -d --name my_container <image_name>:<tag>
+
 ```
-
-9.Remove the Container
-
 ```bash
-$ sudo docker stop (container name)
+tanu@tanu-HP:~$ docker run -d --name my_nginx_container nginx:latest
+docker: Error response from daemon: Conflict. The container name "/my_nginx_container" is already in use by container "c90e667e462a16890f6ff38b8115bb8f5cad28cee63bd553c185e26f97613044". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
 ```
-
+5.start Container
 ```bash
-$ sudo docker rm (container name)
+docker start container_name
 ```
-
-10.Remove Container
-
 ```bash
-$ sudo docker rm (container name)
+tanu@tanu-HP:~$ docker start my_nginx_container
+my_nginx_container
+
 ```
-
-11.Check the container on the machine
-
+6.Shows only running containers.
 ```bash
-$ sudo docker ps
+docker ps
 ```
-
-12.Pull image from docker hub
-
 ```bash
-$ sudo docker pull (image name)
+tanu@tanu-HP:~$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS         PORTS     NAMES
+c90e667e462a   nginx:latest   "/docker-entrypoint.…"   3 hours ago   Up 4 seconds   80/tcp    my_nginx_containe
 ```
-
-13.Push image from docker hub
-
+7.command shows both running and exited containers.
 ```bash
-sudo docker push (image name)
+docker ps -a
 ```
+```bash
+f4d543db6a60   mongo:latest   "docker-entrypoint.s…"   About an hour ago   Exited (0) About an hour ago             my_mongo_container
+6e1a47f34fd7   mysql:latest   "docker-entrypoint.s…"   About an hour ago   Exited (1) About an hour ago             my_mysql_container
+2974755143e5   nginx:latest   "/docker-entrypoint.…"   2 hours ago         Exited (0) 2 hours ago                   nginx
 
-### conclusion
+```
+8.Stop container
+```bash
+docker stop container name
+```
+```bash
+tanu@tanu-HP:~$ docker stop  my_nginx_container
+my_nginx_container
+tanu@tanu-HP:~$ 
+```
+9.Image Remove
+```bash
+docker rmi <image_name>
+```
+```bash
+tanu@tanu-HP:~$ docker rmi python
+Untagged: python:latest
+Untagged: python@sha256:b6f142bd70d2219c98c143094ad2a0b8cc882294a7fb2664377a7b68edfc5767
+Deleted: sha256:d1d39f5c5b149a1e4b3b1b393351d635e3644b463825a7e194b41bf70b9904d6
+Deleted: sha256:35c2d84b14e83517152f8bae7b947533427d8cc36028fb1a7c43565bc7e31796
+Deleted: sha256:795e5215738ee487a9125a2258bd0e70f50c03346eab02cbe64f4826cb7048cd
+Deleted: sha256:c052dc642d8e9772877bd6c12c8a6710d78d03666a1336dedc4c6db671617f64
+Deleted: sha256:0646fafcfadb143cb4ef654685049dcd13e086012decdb48aecbda771c590ac2
+
+```
+10.Remove container
+```bash
+docker rm container_name
+
+```
+```bash
+tanu@tanu-HP:~$ docker rm 97fd9b25021c
+97fd9b25021c
+
+```
+# conclusion
 
 Docker has revolutionized application development by using containerization to ensure consistency, simplify dependency management, and enhance scalability, making it crucial for modern DevOps and cloud integration.
