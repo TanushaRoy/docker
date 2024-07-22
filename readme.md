@@ -4,7 +4,7 @@
 2.  Why we need Docker
 3.  Docker Installation Linux
 4.  What is Docker File
-5.  What is Dcoker Image
+5.  What is Docker Image
 6.  What is Docker Containers
 7.  Flow of Docker
 8.  Docker Daemon
