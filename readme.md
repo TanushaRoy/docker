@@ -53,11 +53,10 @@ Prerequisite for Installation
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
-$ sudo apt-get update
+ sudo apt-get update
 ```
 #### Step 2. Set up Docker's `apt` repository.
-```bash
-$ sudo apt-get install ca-certificates curl
+```bash sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -65,7 +64,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 #### Step 3. Add the repository to Apt sources:
 ```bash
-$  echo \
+echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
@@ -73,30 +72,75 @@ $  echo \
 
 #### Step 4. To install the latest version of Docker Engine:
 ```bash
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 #### Step 5. check the version of Docker :
 
 ```bash
-$ docker version
+docker version
 tanu@tanu-HP:~$ docker --version
 Docker version 27.0.3, build 7d4bcd8
 
 ```
 #### Step 6. Verify Installation of docker :
-* You can verify Docker is running correctly by running a test container.
+* verify Docker is running correctly by running a test container.
 ```bash
-$ sudo docker run hello-world
+ docker run hello-world
+```
+```bash
+tanu@tanu-HP:~$  docker run hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
 ```
 #### Step 7. Start the service of docker :
 ```bash
-$ sudo systemctl start docker
+ systemctl start docker
 ```
 #### step 7. Check the status of docker service :
 ```bash
-$ sudo systemctl status docker
+systemctl status docker
 ```
+```bash
+tanu@tanu-HP:~$ systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset>
+     Active: active (running) since Tue 2024-07-23 11:12:07 IST; 1h 31min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1706 (dockerd)
+      Tasks: 18
+     Memory: 112.5M
+        CPU: 1.322s
+     CGroup: /system.slice/docker.service
+             └─1706 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/cont>
+
+Jul 23 11:12:06 tanu-HP dockerd[1706]: time="2024-07-23T11:12:06.331575170+05:3>
+Jul 23 11:12:06 tanu-HP dockerd[1706]: time="2024-07-23T11:12:06.441314821+05:3>
+Jul 23 11:12:07 tanu-HP dockerd[1706]: time="2024-07-23T11:12:07.162073893+05:3>
+Jul 23 11:12:07 tanu-HP dockerd[1706]: time="2024-07-23T11:12:07.237654522+05:3>
+Jul 23 11:12:07 tanu-HP dockerd[1706]: time="2024-07-23T11:12:07.253224427+05:3>
+Jul 23 11:12:07 tanu-HP dockerd[1706]: time="2024-07-23T11:12:07.253771271+05:3>
+Jul 23 11:12:07 tanu-HP dockerd[1706]: time="2024-07-23T11:12:07.305614645+05:3>
+Jul 23 11:12:07 tanu-HP systemd[1]: Started Docker Application Container Engine.
+Jul 23 12:40:13 tanu-HP dockerd[1706]: time="2024-07-23T12:40:13.298105851+05:3>
+Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
+
+````
 
 # what is Docker file
 
