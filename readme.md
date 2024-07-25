@@ -147,8 +147,8 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 
 # What is Docker Images
 
-- Docker image are the read only binary templates used to create docker container.
-- Single file with all dependencies and configuaration required to run a program.
+- Docker images are the read-only binary templates used to create docker containers.
+- Single file with all dependencies and configurations required to run a program.
 
 ### Way to create an Images
 - Take image from docker hub
