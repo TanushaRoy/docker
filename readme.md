@@ -78,7 +78,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 #### Step 5. check the version of Docker :
 
 ```bash
-sudo docker version
+sudo docker --version
 ```
 ```bash
 tanu@tanu-HP:~$ sudo docker --version
