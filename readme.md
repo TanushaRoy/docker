@@ -1,18 +1,18 @@
 # Docker
 
-1.  What is Docker?
-2.  Why we need Docker?
+1.  What is Docker
+2.  Why we need Docker
 3.  Docker Installation on Linux
-4.  What is a Dockerfile?
-5.  What are Docker Images?
-6.  What is a Docker Container?
+4.  What is a Dockerfile
+5.  What are Docker Images
+6.  What is a Docker Container
 7.  Flow of Docker
 8.  Docker Daemon
 9.  Docker Client
 10. Docker Host
 11. Docker Hub/Registry
 12. Architecture of Docker
-13. Docker Basic Commands
+13. Basic Docker Commands
 14. Conclusion
 15. Reference Links
 
