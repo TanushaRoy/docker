@@ -107,10 +107,7 @@ To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
 ```
-#### Step 7. Start the service of docker :
-```bash
- systemctl start docker
-```
+
 #### step 7. Check the status of docker service :
 ```bash
 systemctl status docker
