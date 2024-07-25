@@ -110,7 +110,7 @@ To try something more ambitious, you can run an Ubuntu container with:
 
 #### step 7. Check the status of docker service :
 ```bash
-systemctl status docker
+sudo systemctl status docker
 ```
 ```bash
 tanu@tanu-HP:~$ systemctl status docker
@@ -219,19 +219,19 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 1. Check docker version
 
 ```bash
-$ docker --version
+sudo docker --version
 ```
 
 ```bash
-tanu@tanu-HP:~$ docker --version
+tanu@tanu-HP:~$ sudo docker --version
 Docker version 27.0.3, build 7d4bcd8
 ```
 2.Pull images from docker hub
 ```bash
-docker pull image
+sudo docker pull image
 ````
 ```bash
-tanu@tanu-HP:~$ docker pull mysql
+tanu@tanu-HP:~$ sudo docker pull mysql
 Using default tag: latest
 latest: Pulling from library/mysql
 d9a40b27c30f: Pull complete 
@@ -251,10 +251,10 @@ docker.io/library/mysql:latest
 ```
 3.List of Docker Images
 ```bash
-docker images
+sudo docker images
 ```
 ```bash
-tanu@tanu-HP:~$ docker images
+tanu@tanu-HP:~$ sudo docker images
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
 <none>       <none>    10732a27da3d   6 days ago    1.42GB
 php          latest    4f9597754516   2 weeks ago   537MB
@@ -263,7 +263,7 @@ nginx        latest    fffffc90d343   4 weeks ago   188MB
 ```
 4.Create Container
 ```bash
-docker run -d --name my_container <image_name>:<tag>
+sudo docker run -d --name my_container <image_name>:<tag>
 
 ```
 ```bash
@@ -273,25 +273,25 @@ See 'docker run --help'.
 ```
 5.start Container
 ```bash
-docker start container_name
+sudo docker start container_name
 ```
 ```bash
-tanu@tanu-HP:~$ docker start my_nginx_container
+tanu@tanu-HP:~$ sudo docker start my_nginx_container
 my_nginx_container
 
 ```
 6.Shows only running containers.
 ```bash
-docker ps
+sudo docker ps
 ```
 ```bash
-tanu@tanu-HP:~$ docker ps
+tanu@tanu-HP:~$ sudo docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED       STATUS         PORTS     NAMES
 c90e667e462a   nginx:latest   "/docker-entrypoint.…"   3 hours ago   Up 4 seconds   80/tcp    my_nginx_containe
 ```
 7.command shows both running and exited containers.
 ```bash
-docker ps -a
+sudo docker ps -a
 ```
 ```bash
 f4d543db6a60   mongo:latest   "docker-entrypoint.s…"   About an hour ago   Exited (0) About an hour ago             my_mongo_container
@@ -301,19 +301,19 @@ f4d543db6a60   mongo:latest   "docker-entrypoint.s…"   About an hour ago   Exi
 ```
 8.Stop container
 ```bash
-docker stop container name
+sudo docker stop container name
 ```
 ```bash
-tanu@tanu-HP:~$ docker stop  my_nginx_container
+tanu@tanu-HP:~$ sudo docker stop  my_nginx_container
 my_nginx_container
 tanu@tanu-HP:~$ 
 ```
 9.Image Remove
 ```bash
-docker rmi <image_name>
+sudo docker rmi <image_name>
 ```
 ```bash
-tanu@tanu-HP:~$ docker rmi python
+tanu@tanu-HP:~$ sudo docker rmi python
 Untagged: python:latest
 Untagged: python@sha256:b6f142bd70d2219c98c143094ad2a0b8cc882294a7fb2664377a7b68edfc5767
 Deleted: sha256:d1d39f5c5b149a1e4b3b1b393351d635e3644b463825a7e194b41bf70b9904d6
@@ -325,11 +325,11 @@ Deleted: sha256:0646fafcfadb143cb4ef654685049dcd13e086012decdb48aecbda771c590ac2
 ```
 10.Remove container
 ```bash
-docker rm container_name
+sudo docker rm container_name
 
 ```
 ```bash
-tanu@tanu-HP:~$ docker rm 97fd9b25021c
+tanu@tanu-HP:~$ sudo docker rm 97fd9b25021c
 97fd9b25021c
 
 ```
