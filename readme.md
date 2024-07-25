@@ -80,13 +80,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```bash
 sudo docker version
 ```
-
+```bash
 tanu@tanu-HP:~$ sudo docker --version
 Docker version 27.0.3, build 7d4bcd8
-
 ```
 #### Step 6. Verify Installation of docker :
 * verify Docker is running correctly by running a test container.
+  
 ```bash
  sudo docker run hello-world
 ```
