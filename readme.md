@@ -79,7 +79,9 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 ```bash
 sudo docker version
-tanu@tanu-HP:~$ docker --version
+```
+
+tanu@tanu-HP:~$ sudo docker --version
 Docker version 27.0.3, build 7d4bcd8
 
 ```
