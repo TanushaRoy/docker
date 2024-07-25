@@ -46,10 +46,11 @@ Docker allows developers to quickly create and test new features or applications
 # Docker Installation Linux
 Prerequisite for Installation
 
-- Ubuntu 22.04.4 LTS or compatible Linux distribution
-- 64-bit of Ubuntu version
-- At least 2 GB of RAM for running Docker
-- Sufficient disk space for Docker images and containers.
+- Ubuntu 22.04.4 LTS Desktop (64-bit) or compatible Linux distribution.
+- At least 2 GB of RAM.
+- At least 2 CPUs.
+- At least 2 GB space for Docker images and containers.
+
 
 #### Step 1. Check if the system up-to-date using following command :
 ```bash
@@ -216,7 +217,7 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20221205115118/Architecture-of-Docker.png)
 
-# Bacis Docker Command
+# Basic Docker Command
 
 1. Check docker version
 
