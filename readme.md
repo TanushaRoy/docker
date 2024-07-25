@@ -78,7 +78,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 #### Step 5. check the version of Docker :
 
 ```bash
-docker version
+sudo docker version
 tanu@tanu-HP:~$ docker --version
 Docker version 27.0.3, build 7d4bcd8
 
@@ -86,10 +86,10 @@ Docker version 27.0.3, build 7d4bcd8
 #### Step 6. Verify Installation of docker :
 * verify Docker is running correctly by running a test container.
 ```bash
- docker run hello-world
+ sudo docker run hello-world
 ```
 ```bash
-tanu@tanu-HP:~$  docker run hello-world
+tanu@tanu-HP:~$  sudo docker run hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -113,7 +113,7 @@ To try something more ambitious, you can run an Ubuntu container with:
 sudo systemctl status docker
 ```
 ```bash
-tanu@tanu-HP:~$ systemctl status docker
+tanu@tanu-HP:~$ sudo systemctl status docker
 ● docker.service - Docker Application Container Engine
      Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset>
      Active: active (running) since Tue 2024-07-23 11:12:07 IST; 1h 31min ago
