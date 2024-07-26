@@ -29,7 +29,7 @@ Docker allows for an easy and consistent application deployment, reducing the co
 
 ## Dependency Management:
 
-Docker containers include all necessary dependencies, libraries, and configurations, ensuring the application runs correctly without any missing dependencies.
+Docker containers include all necessary dependencies, libraries, ensuring the application runs correctly without any missing dependencies.
 
 ## Improved Collaboration:
 
