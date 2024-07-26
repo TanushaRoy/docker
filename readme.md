@@ -45,8 +45,6 @@ Prerequisite for Installation,
 - Ubuntu 22.04.4 LTS Desktop (64-bit) or compatible Linux distribution.
 - At least 2 GB of RAM.
 - At least 2 CPU.
-- At least 2 GB space for Docker images and containers.
-
 #### Step 1. Check if the system is up-to-date using following command :
 ```bash
  sudo apt-get update
@@ -178,8 +176,6 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 # Docker Client
 
 - Docker users can interact with `Docker Daemon` through a `Command Line Interface (CLI)`.
-
-- Docker client uses commands & rest `API` to communicate with docker daemon.
 
 - When a client runs any command on the docker client terminal, the client terminal sends these docker commands to the docker daemon.
 
