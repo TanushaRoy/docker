@@ -145,7 +145,7 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 
 # What is a Dockerfile?
 
-- A Dockerfile is a text file containing a series of instructions that define how to build a docker image. Each instruction in a Dockerfile specifies a step to create the image, such as setting a base image, copying files, installing dependencies, and running commands. When docker builds an image from this Dockerfile, the same image can be used to run a containerir across different operating systems.
+- A Dockerfile is a text file containing a series of instructions that define how to build a docker image. Each instruction in a Dockerfile specifies a step to create the image, such as setting a base image, copying files, installing dependencies, and running commands. When docker builds an image from this Dockerfile.
 
 # What are Docker Images?
 
