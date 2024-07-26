@@ -23,10 +23,6 @@ Docker is a tool that makes developer's task easier to create, deploy, and run a
 
 # Why we need Docker?
 
-## Portability:
-
-Containers can run on any system that supports Docker, making it easy to move applications across different environments and platforms.
-
 ## Simplified Deployment:
 
 Docker allows for an easy and consistent application deployment, reducing the complexity of setting up an environment.
