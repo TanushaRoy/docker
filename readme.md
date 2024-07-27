@@ -179,8 +179,6 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 
 - When a client runs any command on the docker client terminal, the client terminal sends these docker commands to the docker daemon.
 
-- It is possible for docker client to communicate with more than one daemon.
-
   ### Used commands by client
  - The command **docker build** builds a Docker image from a Dockerfile. 
   
