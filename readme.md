@@ -337,8 +337,9 @@ tanu@tanu-HP:~$ sudo docker rm 97fd9b25021c
 ```
 # Conclusion
 
-Docker packages up your software into a "container," which includes everything it needs to run (like a shipping container includes everything needed for a shipment).
-You can move this container to any computer, and it will work the same way, just like a shipping container works the same way no matter where it's delivered.
+- Docker packages up your software into a "container," which includes everything it needs to run (like a shipping container includes everything needed for a shipment).
+  
+- You can move this container to any computer, and it will work the same way, just like a shipping container works the same way no matter where it's delivered.
 
 # Reference Link
  https://docs.docker.com
