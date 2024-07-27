@@ -104,10 +104,6 @@ To generate this message, Docker took the following steps:
     executable that produces the output you are currently reading.
  4. The Docker daemon streamed that output to the Docker client, which sent it
     to your terminal.
-
-To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
-
 ```
 
 #### Step 8. Check the status of Docker service :
