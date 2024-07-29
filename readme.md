@@ -336,5 +336,5 @@ tanu@tanu-HP:~$ sudo docker rm 97fd9b25021c
 - You can move this container to any computer, and it will work the same way, just like a shipping container works the same way no matter where it's delivered.
 
 # Reference Link
- https://docs.docker.com
- https://youtu.be/vWjP3fsfgrw?si=1v3D_vtCYSo0FbWW
+- https://docs.docker.com
+- https://youtu.be/vWjP3fsfgrw?si=1v3D_vtCYSo0FbWW
