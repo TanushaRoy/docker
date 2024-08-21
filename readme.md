@@ -153,7 +153,6 @@ Jul 23 12:40:40 tanu-HP dockerd[1706]: time="2024-07-23T12:40:40.558510949+05:3>
 # What is a Docker Container?
 
 - A docker container is a light weight and executable environment that packages and runs applications with all their dependencies, ensuring consistent behavior across different systems.
-- In other words, we can say that, the image is a template and the container is an instance of that template.
 - Containers are created and managed by docker engine.
 
 ![images](https://gatling.io/hs-fs/hubfs/docker-containers.png?width=450&height=374&name=docker-containers.png)
